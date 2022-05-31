@@ -32,5 +32,6 @@ if ($result->num_rows > 0){
         $data['products'][] = $row;
     }
 }
-*/
 echo $twig->render('index.html', $data);
+*/
+echo '<script language="javascript">alert("JAJAAJJAAJAJ");</script>';
