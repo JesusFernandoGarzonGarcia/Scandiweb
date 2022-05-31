@@ -20,7 +20,7 @@
         {% for product in products %}
         <div class="col-md-3  card">
              <div class="card-header">
-                <input type="checkbox" name="delete_products[]" value="{{ product.id }}"/>
+                <input type="checkbox" class=".delete-checkbox" name="delete_products[]" value="{{ product.id }}"/>
                 {{ product.SKU }} 
             </div>
             <div class="card-body container">
