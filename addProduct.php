@@ -45,4 +45,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         }
     }
 }
-echo $twig->render('create.html');
+echo $twig->render('addProduct.html');
