@@ -1,10 +1,10 @@
 <?php 
 
-//const APP_DIR = __DIR__;
+const APP_DIR = __DIR__;
 
 require_once APP_DIR . '/vendor/autoload.php';
 
-$loader = new \Twig\Loader\FilesystemLoader(APP_DIR . './templates');
+$loader = new \Twig\Loader\FilesystemLoader(APP_DIR . '/templates');
 
 
 $twig = new \Twig\Environment($loader);
