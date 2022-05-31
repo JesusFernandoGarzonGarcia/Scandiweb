@@ -11,22 +11,22 @@
 <h1>New</h1>
 <form method="POST" id="product_form"  action="./addProduct.php">
     <div class="form-group">
-        <label for="input_sku">SKU</label>
-        <input type="text" class="form-control" id="input_sku" name="input_sku" required />
+        <label for="sku">SKU</label>
+        <input type="text" class="form-control" id="sku" name="sku" required />
     </div>
     <div class="form-group">
-        <label for="input_title">Title</label>
-        <input type="text" class="form-control" id="input_title" name="input_title" required />
-    </div>
-
-    <div class="form-group">
-        <label for="input_price">Price $</label>
-        <input type="number" step="0.01" class="form-control" id="input_price" name="input_price" required />
+        <label for="name">Title</label>
+        <input type="text" class="form-control" id="name" name="name" required />
     </div>
 
     <div class="form-group">
-        <label for="input_type">Type Switcher</label>
-        <select  class="form-control" id="input_type" name="input_type" required>
+        <label for="price">Price $</label>
+        <input type="number" step="0.01" class="form-control" id="price" name="price" required />
+    </div>
+
+    <div class="form-group">
+        <label for="productType">Type Switcher</label>
+        <select  class="form-control" id="productType" name="productType" required>
             <option value="">Select type</option>
             <option value="1">DVD Disk</option>
             <option value="2">Book</option>
