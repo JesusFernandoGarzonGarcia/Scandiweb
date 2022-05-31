@@ -1,35 +1,5 @@
 <?php
 
-// Variables
-$hostDB = 'localhost';
-$nombreDB = 'libreria';
-$usuarioDB = 'root';
-$contrasenyaDB = '';
-// Conecta con base de datos
-$hostPDO = "mysql:host=$hostDB;dbname=$nombreDB;";
-$miPDO = new PDO($hostPDO, $usuarioDB, $contrasenyaDB);
-// Prepara SELECT
-
-$miConsultaLibro = $miPDO->prepare('SELECT * FROM libros ;');
-
-$miConsultaGeneros = $miPDO->prepare('SELECT * FROM generos ;');
-
-// Ejecuta consulta
-$miConsultaLibro->execute();
-$miConsultaGeneros->execute();
-
-
-header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
-header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
-
-function addDataBuy(Type $var = null)
-{
-    $textos = array();
-    array_unshift($textos,$var);
-    print_r($textos);
-}
-
-
 
 ?>
 
