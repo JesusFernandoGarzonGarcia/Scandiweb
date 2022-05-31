@@ -8,7 +8,7 @@ require './classes/book.class.php';
 $data = [];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
-    $type = intval($_POST['input_type']);
+    $type = intval($_POST['productType']);
 
     if (in_array($type, [1,2,3])){
         $sku   = strval($_POST['sku']);

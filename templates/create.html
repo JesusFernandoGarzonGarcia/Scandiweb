@@ -10,23 +10,23 @@
 
 <h1>New</h1>
 <form method="POST"  action="./create.php">
-    <div class="product_form">
+    <div class="form-group">
         <label for="input_sku">SKU</label>
         <input type="text" class="form-control" id="sku" name="sku" required />
     </div>
-    <div class="product_form">
+    <div class="form-group">
         <label for="input_title">Title</label>
         <input type="text" class="form-control" id="name" name="name" required />
     </div>
 
-    <div class="product_form">
+    <div class="form-group">
         <label for="input_price">Price $</label>
         <input type="number" step="0.01" class="form-control" id="price" name="price" required />
     </div>
 
-    <div class="product_form">
+    <div class="form-group">
         <label for="input_type">Type Switcher</label>
-        <select  class="form-control" id="productType" name="productType" required>
+        <select  class="form-control" id="producType" name="input_type" required>
             <option value="">Select type</option>
             <option value="1">DVD Disk</option>
             <option value="2">Book</option>
@@ -35,21 +35,21 @@
     </div>
 
     <!-- DVD-disc size -->
-    <div class="product_form no_display"  id="dvd_specs">
+    <div class="form-group no_display"  id="dvd_specs">
         <label for="input_size">Size (MB)</label>
         <input type="number" step="0.01" class="form-control" id="input_size" name="input_size" />
        <div> Please, Provide Size in Mb.</div>
     </div>
 
     <!-- Book weight -->
-    <div class="product_form no_display" id="books_specs">
+    <div class="form-group no_display" id="books_specs">
         <label for="input_weight">Weight (Kg)</label>
         <input type="number" step="0.01" class="form-control" id="input_weight" name="input_weight" />
        <div> Please, Provide Weight in Kg.</div>
     </div>
 
     <!-- Dimensions (HxWxL) for ​Furniture -->
-    <div class="product_form no_display" id="furniture_specs">
+    <div class="form-group no_display" id="furniture_specs">
         <label for="input_dimensions_h">Dimensions (HxWxL)</label>
         <table class="table">
             <tr>
