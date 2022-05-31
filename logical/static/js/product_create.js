@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('#input_type').change(function(i){
+    $('#productType').change(function(i){
         if (this.value == 1) {
             $('#dvd_specs').removeClass('no_display');
             $('#books_specs').addClass('no_display').prop('required',false);
