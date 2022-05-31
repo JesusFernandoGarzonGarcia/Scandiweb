@@ -11,10 +11,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     $type = intval($_POST['input_type']);
 
     if (in_array($type, [1,2,3])){
-        $sku   = strval($_POST['input_sku']);
-        $title = strval($_POST['input_title']);
-        $price = doubleval($_POST['input_price']);
-        $type  = intval($_POST['input_type']);
+        $sku   = strval($_POST['sku']);
+        $title = strval($_POST['name']);
+        $price = doubleval($_POST['price']);
+        $type  = intval($_POST['productType']);
 
         $type_value ='';
         switch ($type) {
