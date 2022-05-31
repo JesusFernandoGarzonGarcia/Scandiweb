@@ -1,9 +1,9 @@
 <?php
-include_once '../bootstrap.php';
-require '../classes/product.class.php';
-require '../classes/furniture.class.php';
-require '../classes/dvd.class.php';
-require '../classes/book.class.php';
+include_once 'bootstrap.php';
+require './classes/product.class.php';
+require './classes/furniture.class.php';
+require './classes/dvd.class.php';
+require './classes/book.class.php';
 
 $data = [];
 
