@@ -1,5 +1,5 @@
 <?php
-
+/*
 include_once 'bootstrap.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
@@ -32,4 +32,5 @@ if ($result->num_rows > 0){
         $data['products'][] = $row;
     }
 }
+*/
 echo $twig->render('index.html', $data);
